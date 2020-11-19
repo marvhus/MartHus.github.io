@@ -4,34 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Start Page</title>
+    <style>
+        .content {
+            display: block;
+        }
+
+        .btn {
+            height: 200px;
+            position: relative;
+        }
+
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        a {
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #2980b9;
+            padding: 15px 40px;
+            width: 200px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.5s;
+            cursor: pointer;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        button:hover {
+            background: #3498db;
+        }
+    </style>
 </head>
 <body>
     <div class="top">
-        <a href="index.html"></a><img src="img/mart_hus.png" alt="mart_hus pixel art"></img></a>
-        <nav>
-            <table>
-                <tr>
-                    <a href="404.html">Home</a>
-                    <a href="404.html">Projects</a>
-                    <a href="404.html">Art</a>
-                    <a href="404.html">Contact</a>
-                </tr>
-            </table>
-        </nav>
+        <img src="img/mart_hus.png" alt="mart_hus pixel art"></img>
     </div>
     <div class="content">
-        <p>
+        <p style="
+            margin-left: 20%; 
+            margin-right: 20%;
+            text-align: center;">
             Hello.<br>
-            I like to code stuff.<br>
-            I have been programing for a few years now. <br>
-            So I decided to make this. <br>
-            You can see my current and past projects <a href="404.html">here</a> <br>
+            This is a website to show of my work. <br>
+            <br>
+            Welcome!<br>
             <br>
             <br>
-            I also like to do some art. <br>
-            You can check it out <a href="404.html">here</a>.
+
         </p>
+
+        <div class="btn">
+            <div class="center">
+                <a href="home.html" class="start_button">Home</a>
+            </div>
+        </div>
+                
     </div>
     <div class="footer">
         <a target="_blank" href="https://www.youtube.com/channel/UCY8Onta2dbjGBumM7EiTcuA?view_as=subscriber">YouTube</a>
