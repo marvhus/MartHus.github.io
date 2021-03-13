@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Projects</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <style>
+        html {
+            margin: 0px;
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            margin: 0px;
+            min-height: 100%;
+            width: 100%;
+        }
+        .games {
+            font-family: 'Roboto', sans-serif;
+            padding: 2%;
+        }
+
+        .game {
+            padding: 2%;
+            border: 3px black solid;
+            width: 60%;
+            transition: 500ms;
+            margin:5%;
+            background-color: #3fb670;
+        }
+
+        .game:hover {
+            transform: scale(1.2);
+        }
+
+        .games a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <a href="index.html"></a><img src="img/mart_hus.png" alt="mart_hus pixel art"></img></a>
+        <nav>
+            <table>
+                <tr>
+                    <a class="btn" href="home.html">Home</a>
+                    <a class="btn" href="Games.html">Games</a>
+                    <a class="btn" href="Art.html">Art</a>
+                    <a class="btn" href="Contact.html">Contact</a>
+                </tr>
+            </table>
+        </nav>
+    </div>
+    <div class="content">
+        <p>
+            Hello.<br>
+            Here are the games I have made<br><br>
+        </p>
+
+        <div class="games">
+            <div class="game dodge-wall">
+                <a target="_blank" href="https://marvhus.itch.io/dodge-wall">
+                    <img src="img/Dodge_Wall.png" alt="Dodge Wall Game Screenshot" height="200px">
+                    <h2>Dodge Wall</h3>
+                    <p>
+                        Dodge Wall is the first ever game I have made in unity <br>
+                        It is a game made from a Brackeys tutorial with some stuff I have made myself.
+                    </p>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <a target="_blank" class="btn" href="https://www.youtube.com/channel/UCY8Onta2dbjGBumM7EiTcuA?view_as=subscriber">YouTube</a>
+        <a target="_blank" class="btn" href="https://twitch.tv/mart_hus">Twitch</a>
+        <a target="_blank" class="btn" href="https://github.com/marvhus">GitHub</a>
+        <a target="_blank" class="btn" href="https://twitter.com/mart_hus">Twitter</a>
+    </div>
+</body>
+</html>

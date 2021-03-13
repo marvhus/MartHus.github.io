@@ -1,5 +1,5 @@
 *{
-  font-family: Times;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -15,34 +15,7 @@
   cursor: pointer;
 }
 
-.footer a{
-  text-decoration: none;
-  color: white;
-  display: inline;
-  margin: 25px;
-  text-align: center;
-  transition: 0.5s;
-}
-
-.footer a:hover {
-  color:  #2980b9;
-}
-
-.content {
-  background-color: #49cf81;
-  padding: 25;
-  padding: 25px;
-  height: 900px;
-  display: flex;
-}
-
-.content p{
-  font-family: arial;
-  text-decoration: none;
-  font-size: 25px;
-}
-
-nav a {
+.btn {
   border: 0;
   background: none;
   display: inline;
@@ -60,6 +33,17 @@ nav a {
   margin: 15px;
 }
 
-nav a:hover {
-  background: #3498db;
+.content {
+  background-color: #49cf81;
+  padding: 25;
+  padding: 25px;
+  padding-bottom: 50%;
+  display: flex;
 }
+
+.content p{
+  font-family: arial;
+  text-decoration: none;
+  font-size: 25px;
+}
+

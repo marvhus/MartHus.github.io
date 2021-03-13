@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="style.css">
     <title>Start Page</title>
     <style>
+        html, body { min-height: 100%; }
         .content {
             display: block;
         }
 
-        .btn {
+        .button {
             height: 200px;
             position: relative;
         }
@@ -23,28 +24,7 @@
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
         }
-
-        a {
-            border: 0;
-            background: none;
-            display: block;
-            margin: 20px auto;
-            text-align: center;
-            border: 2px solid #2980b9;
-            padding: 15px 40px;
-            width: 200px;
-            outline: none;
-            color: white;
-            border-radius: 24px;
-            transition: 0.5s;
-            cursor: pointer;
-            text-decoration: none;
-            margin: 15px;
-        }
-
-        button:hover {
-            background: #3498db;
-        }
+        
     </style>
 </head>
 <body>
@@ -65,18 +45,18 @@
 
         </p>
 
-        <div class="btn">
+        <div class="button">
             <div class="center">
-                <a href="home.html" class="start_button">Home</a>
+                <a class="btn" href="home.html">Home</a>
             </div>
         </div>
                 
     </div>
     <div class="footer">
-        <a target="_blank" href="https://www.youtube.com/channel/UCY8Onta2dbjGBumM7EiTcuA?view_as=subscriber">YouTube</a>
-        <a target="_blank" href="https://twitch.tv/mart_hus">Twitch</a>
-        <a target="_blank" href="https://github.com/marvhus">GitHub</a>
-        <a target="_blank" href="https://twitter.com/mart_hus">Twitter</a>
+        <a target="_blank" class="btn" href="https://www.youtube.com/channel/UCY8Onta2dbjGBumM7EiTcuA">YouTube</a>
+        <a target="_blank" class="btn" href="https://github.com/marvhus">GitHub</a>
+        <a target="_blank" class="btn" href="https://twitter.com/mart_hus">Twitter</a>
+        <a target="_blank" class="btn" href="https://marvhus.itch.io">Itch.io</a>
     </div>
 </body>
 </html>
