@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta http-equiv="Refresh" content="30; url='index.html'" />
+        <style media="screen">
+            html {
+                display: flex;
+                height:100vh;
+                overflow: hidden;
+                justify-content: center;
+                align-items: center;
+                flex-direction:column;
+                background: #222;
+            }
+
+            head {
+                display: block;
+                background-image: url(https://media.giphy.com/media/Ju7l5y9osyymQ/giphy.gif);
+                height:40rem;
+                width:40rem;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border: 10px solid #fff;
+                border-radius: 10px;
+                border-style: dashed;
+            }
+
+            body {
+                font-weight: bold;
+                font-family: 'SF Mono', 'Courier New', Courier, monospace;
+                font-size: 42px;
+                color: #ff4473;
+                padding-top: 5rem;
+                padding-left:   3rem;
+                padding-right:  3rem;
+                display: inline-block;
+            }
+
+            .never::before {
+                content: "Never gonna give you up...";
+            }
+
+            .never::after {
+                margin-left: 16px;
+                content: "i";
+                background: #ff4473;
+                animation: blink 1s infinite;
+            }
+
+            @keyframes blink {
+                from {
+                    opacity: 1;
+                }
+
+                to {
+                    opacity: 0;
+                }
+            }
+
+            #clock {
+                padding-top: 2rem;
+                padding-left:   20rem;
+                padding-right:  20rem;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="never"></div>
+        <div id="clock"></div>
+        <script type="text/javascript">
+            var time = 30;
+            loop();
+            function loop() {
+                setTimeout(function(){ time--; loop();}, 1000);
+                document.getElementById('clock').innerHTML = time;
+            }
+        </script>
+    </body>
+</html>

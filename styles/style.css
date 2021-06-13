@@ -1,23 +1,37 @@
 * {
-    background-color: #2c2c2c;
+    background-color: #222;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: none;
-    color: aliceblue;
+    color: #fff;
     line-height: 75px;
 }
-a:hover {
-    color: #ff7a7a;
+
+a {
+    text-transform:uppercase;
+    color: #fff;
+    transition: all .2s ease-in-out;
 }
+a:hover {
+    color: #ff4473;
+    transform: scale(1.15);
+}
+
 nav li:first-child {
-    float: left; 
+    float: left;
 }
 nav li {
     display: inline-block;
     padding-right: 7%;
-    margin: 10px 0 0 0;
+    margin: 0;
     font-size: 36px;
 }
 section {
     font-size: 70px;
     text-align: center;
+}
+
+iframe {
+    border: 10px solid #fff;
+    border-style: dashed;
+    border-radius: 75px
 }
